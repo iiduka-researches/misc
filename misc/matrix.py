@@ -11,7 +11,7 @@ def normalize_weight_matrix(M: np.ndarray) -> np.ndarray:
     Returned matrix satisfies the following properties:
         1. every element is nonnegative and the matrix is symmetric,
         2. zeroness and positivity of each element are kept, and
-        3. the sum of any column or any row is 1.
+        3. the sum of any column and any row is 1.
     """
     M = M.astype(np.float64)
     for i in range(M.shape[0]):
